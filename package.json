@@ -1,14 +1,22 @@
 {
-  "name": "nodejs-app",
+  "name": "tienda_uno",
   "version": "1.0.0",
-  "description": "A minimal Node.js web application.",
-  "main": "app.js",
-  "author": "alphasec",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.19.2"
-  },
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "setup": "evershop install",
+    "build": "evershop build",
+    "start": "evershop start",
+    "start:debug": "evershop start --debug",
+    "dev": "evershop dev",
+    "user:create": "evershop user:create",
+    "user:changePassword": "evershop user:changePassword"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@evershop/evershop": "^1.2.2",
+    "@evershop/productcomment": "^1.0.2"
   }
 }
